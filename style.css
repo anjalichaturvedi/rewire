@@ -166,15 +166,7 @@ will-change: background;
 article {
   display: block;
   width: 100%;
-  text-align: center;
-  height: 100vh;
-}
-
-article p {
-  width: 50%;
-  font-size: 1.1em;
-  margi
-  n: 0 auto;
+  height: 70vh;
 }
 
 .clear {
@@ -193,4 +185,45 @@ article p {
 .blue-sec {
   background: rgb(83,112,142);
   background: linear-gradient(180deg, rgba(83,112,142,1) 16%, rgba(103,136,170,1) 82%);
+  text-align: left;
+  height: 130vh;
+}
+
+.blue-sec img {
+  width: 35%;
+  height: 80%;
+  float: right;
+  margin: 120px 60px 0px 20px;
+}
+
+.blue-sec h1 {
+  padding-top: 100px;
+}
+
+.article-text {
+  margin: 0 0 0 120px;
+}
+
+.two-text {
+  text-align: center;
+}
+
+.two-box {
+  margin-top: 50px;
+  margin-left: 50px;
+  background: #dbe7f2;
+  border-radius: 15px;
+  color: #2C3E50;
+  padding: 30px 20px 40px 20px;
+  width: 300px;
+  height: 150px;
+  border: none;
+  outline: none;
+}
+
+.two-box:hover {
+  font-size: 17px;
+  transition-delay: 0.1s;
+  transition-duration: 0.4s;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
