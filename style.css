@@ -168,21 +168,19 @@ article {
   width: 100%;
   text-align: center;
   height: 100vh;
-  margin: 6em 0 0 0;
 }
-h1 {
-  font-size: 15em;
-  font-weight: 900;
-  margin: 0 0.1em;
-}
+
 article p {
   width: 50%;
   font-size: 1.1em;
-  margin: 0 auto;
+  margi
+  n: 0 auto;
 }
+
 .clear {
   clear: both;
 }
+
 @media (max-width: 750px) {
   article p {
     width: 95%;
@@ -190,4 +188,9 @@ article p {
   h1 {
     font-size: 5rem;
   }
+}
+
+.blue-sec {
+  background: rgb(83,112,142);
+  background: linear-gradient(180deg, rgba(83,112,142,1) 16%, rgba(103,136,170,1) 82%);
 }

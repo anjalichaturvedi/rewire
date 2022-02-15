@@ -55,7 +55,7 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
-var one = "#11cf72",
+var one = "#6788aa",
 		two = "#1da1f2",
 		three = "#ff3f3f",
 		four = "#ff0099",
