@@ -1,3 +1,4 @@
+//navbar
 var TxtRotate = function(el, toRotate, period) {
   this.toRotate = toRotate;
   this.el = el;
@@ -39,6 +40,7 @@ TxtRotate.prototype.tick = function() {
   }, delta);
 };
 
+// span
 window.onload = function() {
   var elements = document.getElementsByClassName('txt-rotate');
   for (var i=0; i<elements.length; i++) {
@@ -55,8 +57,9 @@ window.onload = function() {
   document.body.appendChild(css);
 };
 
+// color change
 var one = "#6788aa",
-		two = "#1da1f2",
+		two = "#a2de99",
 		three = "#ff3f3f",
 		four = "#ff0099",
 		five = "#ff7a00";
@@ -81,3 +84,19 @@ $(window).on("scroll touchmove", function() {
 				$('body').css('background', $("#five").attr("data-color"))
 		};
 });
+
+// FAQ
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    }
+  });
+}

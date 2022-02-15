@@ -22,18 +22,6 @@ will-change: background;
 .navbar .navbar-brand {}
 
 /* Change navbar styling on scroll */
-.navbar.active {
-  color: black;
-}
-
-.navbar.active .nav-link {}
-
-.navbar.active .nav-link:hover,
-.navbar.active .nav-link:focus {
-  text-decoration: none;
-}
-
-.navbar.active .navbar-brand {}
 
 /* Change navbar styling on small viewports */
 @media (max-width: 991.98px) {
@@ -226,4 +214,51 @@ article {
   transition-delay: 0.1s;
   transition-duration: 0.4s;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.accordion {
+  background-color: #2C3E50;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  transition: 0.4s;
+  outline: none;
+  border: none;
+}
+
+.active, .accordion:hover {
+  background-color: #718eab;
+  outline: none;
+  border-radius: 20px 20px 0px 0px;
+  border: none;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #777;
+  float: right;
+  margin-left: 5px;
+  margin-top: 10px;
+  outline: none;
+  border: none;
+  border-radius: 20px 0px;
+}
+
+.active:after {
+  content: "\2212";
+  outline: none;
+  border: none;
+  border-radius: 20px 0px;
+}
+
+.panel {
+  padding: 0 18px;
+  background-color: #718eab;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  border-radius: 0px 0px 20px 20px;
 }
