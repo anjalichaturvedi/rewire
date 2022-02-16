@@ -262,3 +262,44 @@ article {
   transition: max-height 0.2s ease-out;
   border-radius: 0px 0px 20px 20px;
 }
+
+.sponsors {
+  margin-left: 110px;
+  margin-right: 100px;
+}
+
+.sponsors img {
+  height: 10%;
+  width: 12%;
+  padding: 15px;
+  transition-delay: 0.1s;
+  transition-duration: 0.4s;
+  transition: transform .2s; /* Animation */
+}
+
+.sponsors img:hover {
+  transform: scale(1.2)
+}
+
+.prizes {
+  margin-left: 100px;
+  text-align: center;
+  width: 80%;
+  height: 70%;
+  font-size: 1.5em;
+  height: 50vh;
+}
+
+.prizes h1 {
+  font-size: 4em;
+}
+
+.footer {
+  background-color: #2C3E50;
+  padding: 10px;
+  text-align: center;
+}
+
+.footer p {
+  font-size: 1.2em;
+}

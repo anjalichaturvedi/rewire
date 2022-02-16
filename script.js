@@ -61,8 +61,8 @@ window.onload = function() {
 var one = "#6788aa",
 		two = "#a2de99",
 		three = "#ff3f3f",
-		four = "#ff0099",
-		five = "#ff7a00";
+		four = "#ff3f3f",
+		five = "#FFFFFF";
 
 $(window).on("scroll touchmove", function() {
 		if ($(document).scrollTop() >= $("#one").position().top) {
